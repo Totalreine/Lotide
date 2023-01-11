@@ -33,13 +33,13 @@ function assertArraysEqual (one, two) {
 function without (source, itemsToRemove) {
     let array = []
     for (let i = 0; i < source.length; i++) {
-        if(source[i] !== itemsToRemove[i]) {
+        if(!itemsToRemove.includes(source[i])) {
              array.push(source[i])
         } 
     }
     return array
 }
 
-console.log(without([1, 2, 3], [1])) // => [2, 3]
-console.log(without(["1", "2", "3"], [1, 2, "3"])) // => ["1", "2"]
+console.log(without([1, 2, 3], [0, 1])) // => [2, 3]
+console.log(without(["1", "2", "3"], [1, "3", 3])) // => ["1", "2"]
 

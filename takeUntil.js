@@ -39,4 +39,4 @@ const takeUntil = function(array, callback) {
         } 
 }
 
-console.log(takeUntil([3,6,8,2,5,8,0,1,5,4,7,6,4],cb))
+module.exports = takeUntil

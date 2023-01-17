@@ -39,4 +39,6 @@ function x (arg) {
 
 let result = map(words, x)
 console.log(result)
+
+module.exports = map
   

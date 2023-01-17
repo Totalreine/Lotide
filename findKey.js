@@ -28,4 +28,4 @@ function findKey (object, callback) {
     
 }
 
-console.log(findKey({a: 3, b: 2, c: 3, d: 0, e: 1, f: 6},cb))
+module.exports = findKey

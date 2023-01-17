@@ -5,10 +5,10 @@ function assertArraysEqual (one, two) {
     let result = eqArrays(one, two) 
 
     if (result === true) {
-        console.log(`👍👍👍  Assertion Passed`)
+        console.log(`👍👍👍  Assertion Passed ${one} === ${two}`)
     } else {
-        console.log(`👎👎👎  Assertion Failed`)
+        console.log(`👎👎👎  Assertion Failed ${one} !== ${two}`)
     }
 }
-console.log(assertArraysEqual([1,2,3], [1,2,3]))
+
 module.exports = assertArraysEqual

@@ -7,5 +7,4 @@ const assertEqual = function(actual, expected) {
 };
 
 
-assertEqual("L", "L");
-assertEqual("1", 1);
+module.exports = assertEqual;

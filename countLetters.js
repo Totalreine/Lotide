@@ -21,4 +21,4 @@ function countLetters (sentence) {
     return list
 }
 
-
+console.log(countLetters("holla"))
